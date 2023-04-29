@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.background{
+    background-color: red;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    
+}
+.animation{
+    transform: scale(0.1%);
+    background-color: purple;
+    width: 200px;
+    height: 200px;
+    position:absolute;
+    animation-name: start;
+    animation-duration: 3s;
+    right: 800px;
+    bottom: 400px;
+    animation-timing-function: linear;
+    z-index: 1;
+}
+@keyframes start{
+    0%{
+      transform:scale(1);
+      background-image: none;
+      bottom: 0px;
+      right: 0px;
+      background-color: black;  
+    }
+    10%{
+        background-image: none;
+        bottom:100px;
+        right: 100px;
+    }
+    20%{
+        background-image: none;
+        bottom: 200px;
+        right: 200px;
+        background-color: red;
+    }
+    30%{
+        background-image: none;
+        bottom: 300px;
+        right: 300px;
+    }
+    40%{
+        background-image: none;
+        bottom: 400px;
+        right: 400px;
+        background-color: purple;
+    }
+    50%{
+        background-image: none;
+        right: 500px;
+    }
+    60%{
+        background-image: none;
+        right: 600px;
+        background-color: aqua;
+    }
+    70%{
+        background-image: none;
+        right: 700px;
+    }
+    80%{
+        right: 800px;
+        background-color: orange;
+        transform:scale(0.7%);
+    }
+    90%{
+        transform: scale(0.5%);
+    }
+    100%{
+        /* background-image: url(../img/dvd-video-1.svg);
+        background-size:cover; */
+        width: 200px;
+        height: 200px;
+        transform: scale(0.1%);
+    }
+}
+.image{
+    background: url(../img/dvd-video-1.svg);
+    background-size: cover;
+    transform: scale(1);
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    right: 800px;
+    bottom: 400px;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-name: dvd;
+    animation-timing-function: linear;
+    animation-delay: 3s;
+
+}
+@keyframes dvd{
+    10%{
+        transform: scale(1);
+    }
+    20%{
+        right: 90%;
+        bottom: 10%;
+        transform: none;
+    }
+    25%{
+        right: 80%;
+        bottom: 0%;
+        transform: none;
+    }
+    45%{
+        right: 20%;
+        bottom: 85%;
+        transform: none;
+    }
+    50%{
+        right: 0%;
+        bottom: 70%;
+        transform: none;
+    }
+    70%{
+        bottom: 0%;
+        right: 70%;
+        transform: none;
+    }
+    75%{
+        bottom: 25%;
+        right: 90%;
+        transform: none;
+    }
+    85%{
+        bottom: 90%;
+        right: 50%;
+        transform: none;
+    }
+    95%{
+        bottom: 400px;
+        right: 0%;
+        transform: none;
+    }
+    100%{
+        right: 800px;
+        bottom: 400px;
+        transform: none;
+    }
+}
